@@ -10,7 +10,7 @@ export default function Search(props) {
 
     useEffect(() =>{  
         const testFetch = async() =>{
-            const res = await fetch(`http://api.musixmatch.com/ws/1.1/track.search?q=${query}&page_size=5&page=1&s_track_rating=desc&apikey=68dff03e988544955143f0d8edaa3ad5`)
+            const res = await fetch(`https://cors-anywhere.herokuapp.com/http://api.musixmatch.com/ws/1.1/track.search?q=${query}&page_size=5&page=1&s_track_rating=desc&apikey=68dff03e988544955143f0d8edaa3ad5`)
             const data= await res.json();            
             setResponseArray(data.message.body.track_list)                
         }  

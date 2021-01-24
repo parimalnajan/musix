@@ -12,7 +12,7 @@ export default function Lyrics(props) {
 
     useEffect(()=>{
         async function getLyrics(){
-        const res = await fetch(`http://api.musixmatch.com/ws/1.1/track.lyrics.get?track_id=${ID}&apikey=68dff03e988544955143f0d8edaa3ad5`)
+        const res = await fetch(`https://cors-anywhere.herokuapp.com/http://api.musixmatch.com/ws/1.1/track.lyrics.get?track_id=${ID}&apikey=68dff03e988544955143f0d8edaa3ad5`)
         const data= await res.json();
         setLyrics(data.message.body.lyrics.lyrics_body)
         }     
