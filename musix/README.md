@@ -1,7 +1,7 @@
-## Live Demo link:
-[https://lyric-hunt.netlify.app](link)
+## Live demo link:
+[https://lyric-hunt.netlify.app]
 
-## Available Scripts
+## Available scripts
 In the project directory (musix/musix), you can run:
 
 ### `npm start`
