@@ -1,0 +1,25 @@
+p{
+    font-size: 2em;
+    margin:0;
+    margin-bottom: 5px;
+}
+span{
+    font-size: 0.9em;
+}
+
+button{
+    padding: 10px;
+    background-color: navy;
+    color: white;
+}
+button:hover{
+    cursor: pointer;
+}
+
+@media(max-width:480px){
+    .lyrics-wrapper{
+        max-width: 300px;
+        margin:0;
+        padding: 0;
+    }
+}
