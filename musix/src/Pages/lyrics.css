@@ -15,11 +15,3 @@ button{
 button:hover{
     cursor: pointer;
 }
-
-@media(max-width:480px){
-    .lyrics-wrapper{
-        max-width: 300px;
-        margin:0;
-        padding: 0;
-    }
-}

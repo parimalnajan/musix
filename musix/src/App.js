@@ -12,16 +12,16 @@ function App() {
 
   return (
     <Router>
-      <Layout>
-        <div className="App">
+      <div className="App">
+        <Layout>
           <TrackIDProvider>
             <Switch>
               <Route exact path="/"><Search/></Route>
               <Route exact path="/lyrics"><Lyrics/></Route>
             </Switch>
-          </TrackIDProvider>          
-        </div>
-      </Layout>
+          </TrackIDProvider>
+        </Layout>
+      </div>
     </Router>
   );
 }
