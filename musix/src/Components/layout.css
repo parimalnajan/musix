@@ -6,4 +6,18 @@ header{
     margin-bottom: 15px;
     width: 100%;
 }
+.layout-wrapper{
+    padding: 0;
+    margin:0;
+}
 
+@media(max-width:480px){
+    .App{
+        width: 90%;
+    }
+    pre{
+        overflow-x: auto;
+        white-space: pre-wrap;        
+        word-wrap: break-word;
+    }
+}
