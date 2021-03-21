@@ -30,7 +30,8 @@ export default function Search(props) {
     }
 
     return (
-    <div className="App">        
+    <div className="App"> 
+    <a target="_blank" href="https://cors-anywhere.herokuapp.com/corsdemo">Please click here to enable temporary CORS required for the api calls</a>       
     <h4>Find lyrics of any song </h4>
     <input className="search-box" 
         onChange={(event)=>{
