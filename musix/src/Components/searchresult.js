@@ -12,9 +12,9 @@ export default function Searchresult(props) {
 
     function setIDAndRedirect(id){
         console.log(props.responseArray[1])
-        setTrackID(props.responseArray[id]);      //send entire track instead of just ID
+        setTrackID(props.responseArray[id]);      //pass entire track object instead of just ID
         
-        history.push('/lyrics')             //
+        history.push('/lyrics')             
     }
 
     
@@ -24,7 +24,7 @@ export default function Searchresult(props) {
             props.responseArray.map((item,index) => (
             <div id="track-wrapper" 
                 onClick={()=>{
-                //setIDAndRedirect(item.track.track_id)  
+                //setIDAndRedirect(item.track.track_id)  //passes only id
                 setIDAndRedirect(index)
                 }}>
            
