@@ -4,20 +4,15 @@ import {TrackIDContext} from '../contextprovider';
 
 import './searchresult.css'
 
-
 export default function Searchresult(props) {
 
     const history= useHistory();
     let [trackID,setTrackID]=useContext(TrackIDContext);
 
     function setIDAndRedirect(id){
-        console.log(props.responseArray[1])
         setTrackID(props.responseArray[id]);      //pass entire track object instead of just ID
-        
         history.push('/lyrics')             
     }
-
-    
 
     return (
         <> {

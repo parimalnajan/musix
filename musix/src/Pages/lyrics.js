@@ -23,7 +23,6 @@ export default function Lyrics(props) {
         history.push('/')  
     }
   
-
     return (<>  
         <button onClick={redirectToSearch}>Search for More Lyrics</button>
         <div className="lyrics-wrapper">

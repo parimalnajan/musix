@@ -2,7 +2,6 @@ import React, {useState,useEffect} from 'react';
 import Searchresult from '../Components/searchresult';
 import './search.css';
 
-
 export default function Search(props) {
 
     let [query,Setquery]=useState();
@@ -18,10 +17,8 @@ export default function Search(props) {
         let efficientTimeout = setTimeout(()=>{       
             query && testFetch()
         },300);  
-        return () => clearTimeout(efficientTimeout);   
-        
+        return () => clearTimeout(efficientTimeout);           
     },[query])
-
       
     const inputChangeHandler = (event) =>{
         Setquery(event.target.value)
@@ -31,7 +28,7 @@ export default function Search(props) {
 
     return (
     <div className="App"> 
-    <a target="_blank" href="https://cors-anywhere.herokuapp.com/corsdemo">Please click here to enable temporary CORS required for the api calls</a>       
+    <a target="_blank" href="https://cors-anywhere.herokuapp.com/corsdemo">Please click here and request access to the CORS server</a>       
     <h4>Find lyrics of any song </h4>
     <input className="search-box" 
         onChange={(event)=>{
